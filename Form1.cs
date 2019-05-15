@@ -31,5 +31,10 @@ namespace Interface_Button_Test
         {
 
         }
+
+        private void buttonCopy_Click(object sender, EventArgs e)
+        {
+            textCopy.Text = textSentence.Text;
+        }
     }
 }

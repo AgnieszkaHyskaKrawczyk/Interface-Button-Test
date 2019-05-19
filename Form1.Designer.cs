@@ -33,6 +33,7 @@
             this.textSentence = new System.Windows.Forms.TextBox();
             this.textCopy = new System.Windows.Forms.TextBox();
             this.buttonCopy = new System.Windows.Forms.Button();
+            this.checkBoxExit = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // buttonShow
@@ -80,11 +81,23 @@
             this.buttonCopy.UseVisualStyleBackColor = true;
             this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
+            // checkBoxExit
+            // 
+            this.checkBoxExit.AutoSize = true;
+            this.checkBoxExit.Location = new System.Drawing.Point(373, 295);
+            this.checkBoxExit.Name = "checkBoxExit";
+            this.checkBoxExit.Size = new System.Drawing.Size(49, 17);
+            this.checkBoxExit.TabIndex = 5;
+            this.checkBoxExit.Text = "Exit?";
+            this.checkBoxExit.UseVisualStyleBackColor = true;
+            this.checkBoxExit.CheckedChanged += new System.EventHandler(this.CheckBoxExit_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBoxExit);
             this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.textCopy);
             this.Controls.Add(this.textSentence);
@@ -105,6 +118,7 @@
         private System.Windows.Forms.TextBox textSentence;
         private System.Windows.Forms.TextBox textCopy;
         private System.Windows.Forms.Button buttonCopy;
+        private System.Windows.Forms.CheckBox checkBoxExit;
     }
 }
 

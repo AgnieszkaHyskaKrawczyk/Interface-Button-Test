@@ -36,5 +36,10 @@ namespace Interface_Button_Test
         {
             textCopy.Text = textSentence.Text;
         }
+
+        private void CheckBoxExit_CheckedChanged(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
